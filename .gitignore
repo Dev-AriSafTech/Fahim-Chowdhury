@@ -1,0 +1,14 @@
+# Environment
+env/
+
+# Pycache
+__pycache__/
+
+# vs code
+.vscode/
+
+# Downloads
+downloads/
+
+# All csv
+*.csv

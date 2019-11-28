@@ -20,9 +20,7 @@ while exists == False:
 encodings = ['utf-8', 'ansi', 'utf-16']
 for enc in encodings:
     try:
-        print(f"step {enc}")
         with open(f'{list_file}.csv', 'r', encoding=enc) as csv_file:
-            print(f"file:{csv_file}")
             csv_reader = csv.reader(csv_file)
 
             # Check if downloads folder exists. Create if not
@@ -89,6 +87,5 @@ for enc in encodings:
                 os.chdir('../')
         break
     except UnicodeDecodeError as e:
-        print(e)
         os.chdir('../')
         continue
